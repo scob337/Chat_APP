@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Aside_Active.active {
+  border-left: 5px #646464 solid;
+  background-color: #e0e0e0;
+
+}
+
+.Send::after {
+  border-width: 10px;
+  border-style: solid;
+  border-color:  rgb(92, 211, 198)  transparent transparent transparent;
+}
+
+.Recevied::after {
+  border-width: 10px;
+  border-style: solid;
+  border-color: #ffffff transparent transparent transparent;
+
+}
+
+.headerQr {
+  background: rgb(71, 143, 228);
+  background: linear-gradient(190deg, rgb(92, 211, 198) 0%, rgb(71, 143, 228) 100%);
+
+}
+
+.BtnColor {
+  background: rgb(71, 143, 228);
+    background: linear-gradient(190deg, rgb(92, 211, 198) 0%, rgb(71, 143, 228) 100%);
+}
+
+.swal2-confirm {
+  background: rgb(71, 143, 228);
+  background: linear-gradient(270deg, #57C1CC 0%, #4DA3D9 100%) !important;
+  color: white !important;
+  border: none !important;
+  padding: 10px 40px !important;
+  border-radius: 5px !important;
+  font-size: 16px !important;
+  border:none;
+  outline:none;
+}
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
